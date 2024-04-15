@@ -41,6 +41,7 @@
             weatherDataButton.TabIndex = 0;
             weatherDataButton.Text = "Weather Data";
             weatherDataButton.UseVisualStyleBackColor = true;
+            weatherDataButton.Click += weatherDataButton_Click;
             // 
             // vendingMachineButton
             // 
@@ -50,6 +51,7 @@
             vendingMachineButton.TabIndex = 1;
             vendingMachineButton.Text = "Vending Machine";
             vendingMachineButton.UseVisualStyleBackColor = true;
+            vendingMachineButton.Click += vendingMachineButton_Click;
             // 
             // exitButton
             // 
@@ -61,12 +63,13 @@
             exitButton.TabIndex = 2;
             exitButton.Text = "EXIT";
             exitButton.UseVisualStyleBackColor = false;
+            exitButton.Click += exitButton_Click;
             // 
             // Main
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(167, 101);
             Controls.Add(exitButton);
             Controls.Add(vendingMachineButton);
             Controls.Add(weatherDataButton);
